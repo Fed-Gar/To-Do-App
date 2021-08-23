@@ -1,0 +1,65 @@
+@use '../../utils/master.scss' as m;
+
+.container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+    
+  background-color: transparentize(m.$primary-color, .2);
+  box-shadow: m.$todos-shadow;
+  border-radius: m.$radius;
+  padding: 1rem;
+  margin-top: 3%;
+}
+
+.label {
+  width: 100%;
+    
+  display: flex;
+  justify-content: center;
+    
+  color: m.$black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.input {
+  width: 80%;
+  
+  margin-top: .1rem;
+  margin-bottom: .3rem;
+  
+  font-size: 1.1rem;
+  box-shadow: m.$todos-shadow;
+  border-radius: .3rem;
+  border: none;
+  outline: none;
+}
+
+.textarea {
+  width: 80%;
+  
+  margin-top: .1rem;
+  margin-bottom: .3rem;
+  
+  resize: none;
+  box-shadow: m.$todos-shadow;
+  border-radius: .3rem;
+  border: none;
+  outline: none;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}

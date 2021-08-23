@@ -1,0 +1,21 @@
+// Font:
+$font-family: Arial, Helvetica, sans-serif;
+
+// Colors:
+$white: rgb(256,256,256);
+$black: rgb(0,0,0);
+$primary-color: rgb(230, 240, 170);
+$secondary-color: rgb(15, 15, 185);
+$red-color: rgba(255,0,0,0.6);
+$grey-color: rgb(136,136,136);
+
+// Hovers
+$hover-red: rgb(255, 0, 0);
+$hover-blue: rgb(0, 0, 255);
+
+// Border-Radius
+$radius: .5rem;
+
+// Shadows:
+$hole-shadow: inset 0px 0px 2px 0px $grey-color;
+$todos-shadow: 10px 10px 25px 3px transparentize($black, 0.7);

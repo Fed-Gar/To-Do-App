@@ -1,0 +1,23 @@
+@use '../../utils/master.scss' as m;
+
+.container {
+  width: 80%;
+  min-height: 80vh;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.todos {
+  width: 30%;
+  height: 40%;
+
+  background-color: transparentize(m.$primary-color, 0.2);
+  box-shadow: m.$todos-shadow;
+  border-radius: m.$radius;
+  padding: .5rem;
+}

@@ -1,0 +1,55 @@
+@use '../../../utils/master.scss' as m;
+
+.button {
+  position: relative;
+  
+	margin: 1rem;
+
+  background: transparentize(m.$secondary-color, .2);
+  color: m.$primary-color;
+  border: 0.25rem solid rgba(15, 15, 185, .2);
+	border-radius: m.$radius;
+  padding: 0.25em 0.30em;
+  
+	font-size: 1.1rem;
+  
+	overflow: hidden;
+  z-index: 1;
+  
+  &:hover {
+		color: m.$secondary-color;
+		border: 0.25rem solid m.$secondary-color;
+  	cursor: pointer;
+  }
+
+	&::after {
+		content: "";
+  
+		display: block;	
+  	position: absolute;
+  
+		background: m.$primary-color;
+  	z-index: -1;
+	}
+	
+	&[class^="grow"]::after {
+		transition: all 0.3s ease;
+	}
+	
+	&[class^="grow"]:hover::after {
+  	transition: all 0.3s ease-out;
+	}
+	
+	&.grow::after {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		
+		transform: scale(0, 0);
+	}
+	
+	&.grow:hover::after {
+		transform: scale(1, 1);
+	}
+}

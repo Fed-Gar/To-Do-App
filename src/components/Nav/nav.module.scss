@@ -1,0 +1,45 @@
+@use '../../utils/master.scss' as m;
+
+.navBar {
+  width: 100%;
+  height: 3.5rem;
+
+  display: flex;
+  
+	margin-bottom: 1.5em;
+  background-color: transparent ;
+}
+
+nav {
+  width: 100%;
+}
+
+.add {
+	position: absolute;
+	right: 2%;
+	top: 3.6%;
+
+  font-size: 1.5rem;
+  color: transparentize(m.$secondary-color, 0.2);
+  font-weight: 900;
+  text-decoration: none;
+    
+  &:hover {
+		transform: scale(1.1);
+    color: m.$hover-blue;
+  }
+}
+
+.home {
+	position: absolute;
+	left: 4%;
+	top: 1%;
+
+	font-size: 2.7rem;
+	color: transparentize(m.$secondary-color, 0.2);
+
+	&:hover {
+		transform: scale(1.1);
+		color: m.$hover-red;
+	}
+}

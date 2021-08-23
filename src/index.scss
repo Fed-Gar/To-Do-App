@@ -1,0 +1,45 @@
+@use './utils/master.scss' as m;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100vh;
+  width: 2px;
+  background: m.$red-color;
+  font-family: m.$font-family;
+}
+
+.lines {
+  height: 100vh;
+  width: 100%;
+  background-image: repeating-linear-gradient(m.$primary-color 0px, m.$primary-color 24px, m.$secondary-color 25px);
+}
+
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: m.$white;
+  border-radius: 50%;
+  box-shadow: m.$hole-shadow;
+}
+
+.hole-top {
+  top: 10%;
+}
+
+.hole-middle {
+  top: 50%;
+}
+
+.hole-bottom {
+  bottom: 10%;
+}

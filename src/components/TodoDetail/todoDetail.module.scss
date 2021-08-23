@@ -1,0 +1,64 @@
+@use '../../utils/master.scss' as m;
+
+.container {
+  width: 40vw;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: transparentize(m.$primary-color, .2);
+  padding: 1em;
+  border-radius: m.$radius;
+  box-shadow: m.$todos-shadow;
+  
+  h2 {
+    margin-bottom: 5px;
+      
+    color: m.$black;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 22px;
+    color: m.$black;
+  }
+  
+  h4 {
+    position: absolute;
+    top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+    color: m.$black;
+  }
+  
+  p {
+    color: m.$black;
+    font-size: 20px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  position: absolute;
+  bottom: .5em;
+
+  margin-left: auto;
+  margin-right: auto;
+}
